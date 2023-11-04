@@ -1,0 +1,62 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon">
+    <title>AyurVichar | {% block title %}{% endblock title %}</title>
+    
+    {% block head %}
+    {% endblock head %}
+
+</head>
+
+<body>
+
+    <header>
+        <section id="navbar">
+
+            <nav>
+                <input type="checkbox" id="check">
+            <label id="check-label" for="check" class="checkbtn">
+                <i class='bx bx-menu'></i>
+               
+            </label>
+                <div class="logo">
+                    <h1><a href="/"><img class="logo-img" src="{% static 'img/law-hammer.svg' %}" 
+                        alt="AyurVichar - (tag line)"><span> AyurVichar </span></a>
+                <h1>
+                </div>
+                <ul class=" menu-list">
+                    
+                    <li> <a class="menu-items" href="/">Home</a> </li>
+
+                    <li> <a class="menu-items" href="/about">About</a> </li>
+
+
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+
+    <main>
+        {% block main %}
+        {% endblock main %}
+    </main>
+
+
+    {% block script %}
+    
+    {% endblock script %}
+
+
+
+</body>
+
+</html>
