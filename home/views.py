@@ -8,7 +8,7 @@ from django.contrib.auth import authenticate,login, logout
 from django.contrib import messages
 # from django.http import HttpResponse
 
-from models import PrakrutiResult
+from .models import PrakrutiResult
 
 # Create your views here.
 
@@ -98,6 +98,11 @@ def registerUser(request):
         return redirect('/prakruti')
     
     return render(request, "register.html")
+
+def logoutUser(request):
+    auth.logout(request)
+    return redirect("home")
+
 
 def profile(request):
 
@@ -554,9 +559,9 @@ def prakriti_request(request):
         prakruti_result = PrakrutiResult(user=user, vata_score=vata_score, pitta_score=pitta_score, kapha_score=kapha_score, prakruti_type=prakruti_type)
         prakruti_result.save()
 
-        return render(request, "prakruti_result.html", {"prakruti_type": prakruti_type})
+        return render(request, "profile.html", {"prakruti_type": prakruti_type})
 
-    return render(request, "prakruti_chatbot.html")
+    return render(request, "prakruti-chatbot.html", {"questions" : questions})
 
         
 
