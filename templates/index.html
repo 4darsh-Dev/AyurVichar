@@ -1,11 +1,72 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base.html" %}
+
+{% load static %}
+{% block title %}Home{% endblock title %}
+{% block head %}
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AyurVichar</title>
+   <link rel="stylesheet" href="{% static 'css/style.css' %}">
+   <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
+
+{% endblock head %}
+
 <body>
-    <h1>Welcome to AyurVichar! </h1>
+    
+    {% block main %}
+
+    <main>
+        <section id="intro" class="content-section">
+
+            <div class="intro-text">
+                <p class="name">Welcome to <span> AyurVichar </span></p>
+                <h2>Your Personal assistant for harnessing Ayurvedic wisdom !</h2>
+                
+                <p>"Your Dosha, Your Health"</p>
+                <a class="blog-link"  href="/login">Know Your Prakruti<i
+                        class='bx bxs-chevron-right'></i></a>
+
+
+
+            </div>
+
+            <!-- image for landing page -->
+            <div class="intro-img">
+                
+            </div>
+
+
+
+        </section>
+        <div class="gradient">
+
+        </div>
+        
+        <div class="gradient">
+
+        </div>
+        <!-- <div class="home-wave">
+
+        </div> -->
+        
+
+
+        <div class="gradient">
+
+        </div>
+
+
+
+        
+    </main>
+    {% endblock main %}
+
+    {% block script %}
+    {% comment %} <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script> {% endcomment %}
+    <script src="js/script.js"></script>
+    {% endblock script %}
+
 </body>
+
 </html>

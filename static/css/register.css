@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.mainContainer{
+    width:100vw;
+    height: 100vh;
+    background: linear-gradient(#35bda4, transparent), linear-gradient(to top left, #1d26ae, transparent), linear-gradient(to top right, #e135be, transparent);
+    background-blend-mode: screen;
+
+
+}
+.mc-div{
+    width:100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.error-message{
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    
+
+}
+.error-message p{
+    color: var(--deep-pink);
+    font-size: 16px;
+    font-family: var(--sans);
+    padding:12px;
+    margin: 6px;
+
+}
+.sub-c{
+    width: 420px;
+    height: 500px;
+    background-color: white;
+    color: black;
+    border: 2px solid white;
+
+    border-radius: 9px;
+    
+    
+}
+.sub-c-1{
+    width: 342px;
+    height: auto;
+    /* background-color: salmon; */
+    margin: 20px 40px 20px 40px;
+
+
+}
+.head{
+    font-size: 32px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+.form{
+    /* background-color: #35bda4; */
+    width: 100%;
+    height: 275px;
+    margin-top: 25px;
+
+
+}
+.form-c-1{
+    width: 100%;
+    margin: 8px 0px 8px 0px;
+}
+.sub-head{
+    color: black;
+    display: block;
+    font-family: sans-serif,monospace;
+    font-size: 16px;
+    font-weight: 500;
+    width: 90px;
+    height: 22px;
+}
+.form-f{
+    width: 309px;
+    height: 22px;
+    border: none;
+    padding: 6px;
+    padding-left: 27px;
+    /* background-color:royalblue; */
+    border-bottom: 2px solid gray;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+#forgot a{
+    font-family: sans-serif;
+    font-size: 13px;
+    /* display: inline-block; */
+    color: rgb(93, 23, 158);
+    float: right;
+    text-decoration: none;
+    position: relative;
+    top: -10px;
+    
+
+
+}
+
+#forgot a:hover{
+    text-decoration: underline;
+
+}
+
+.signup-btn{
+    font-size: 16px;
+    width: 340px;
+    background-color: #157ad8;
+    height: 40px;
+    color: white;
+    font-weight: 600;
+    border: 2px solid #157ad8;
+    border-radius: 25px;
+    position: relative;
+    top: 12px;
+    
+}
+.signup-btn:hover{
+    cursor: pointer;
+    background-color: #1068b9;
+}
+.login{
+    width:  100%;
+    height: auto;
+    text-align: center;
+    position: relative;
+    top: 108px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.login span a{
+    color: #157ad8;
+    text-decoration: none;
+    
+    
+
+}
+.login span a:hover{
+    text-decoration: underline;
+    color: #1068b9;
+    font-weight: 600;
+}
+
+.input-img{
+    height: 20px;
+    position: absolute;
+    transform: translateY(2px);
+    margin-left: -1px;
+
+}
