@@ -1,6 +1,6 @@
 
 # AyurVichar
-A web platform for finding prakruti (pheotype) of individuals, suggesting food and lifestyle rules, regulations for a healthy balanced life.. 
+A web platform for finding prakruti (phenotype) of individuals, suggesting food and lifestyle rules, regulations for a healthy balanced life.. 
 
 ## Installation
 
@@ -9,7 +9,7 @@ Install my-project with github
 ```bash
 1. Getting the project 
 git clone https://github.com/4darsh-Dev/AyurVichar.git
-cd Mthura-refinery 
+cd AyurVichar
 
 2. Instaling required python modules
 pip install -r requirements.txt
