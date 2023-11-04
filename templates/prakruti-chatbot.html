@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+
+{% load static %}
+{% block title %}Prakruti Chatbot {% endblock title %}
+{% block head %}
+<head>
+   <link rel="stylesheet" href="{% static 'css/style.css' %}">
+   <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+{% endblock head %}
+
+<body>
+    
+    {% block main %}
+
+    <main>
+        <section id="intro" class="content-section">
+
+            <form method="post">
+                {% csrf_token %}
+                {% for question in questions %}
+                <div class="question">{{ question.question }}</div>
+                <input type="radio" name="{{ question.id }}" value="1"> Yes
+                <input type="radio" name="{{ question.id }}" value="0"> No
+                <br>
+                {% endfor %}
+                <button type="submit">Submit</button>
+            </form>
+
+
+            </div>
+
+            <!-- image for landing page -->
+            <div class="intro-img">
+                
+            </div>
+
+
+
+        </section>
+        <div class="gradient">
+
+        </div>
+        
+        <div class="gradient">
+
+        </div>
+        <!-- <div class="home-wave">
+
+        </div> -->
+        
+
+
+    
+
+
+
+        
+    </main>
+    {% endblock main %}
+
+    {% block script %}
+
+    <script src="js/script.js"></script>
+    <script src="js/prakruti.js"></script>
+
+    {% endblock script %}
+
+</body>
+
+</html>

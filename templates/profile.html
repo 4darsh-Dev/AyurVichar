@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block head %}{{username}} {% endblock head %}
+
+{% block head %}
+<head>
+   <link rel="stylesheet" href="{% static 'css/style.css' %}">
+   <link rel="stylesheet" href="{% static 'css/profile.css' %}">
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+{% endblock head %}
+
+
+{% block main %}
+<main>
+    
+</main>
+{% endblock main %}
+
+{% block script %}
+
+<script src="{% static 'js/script.js' %}"></script>
+<script src="{% static 'js/profile.js' %}"></script>
+
+{% endblock script %}
