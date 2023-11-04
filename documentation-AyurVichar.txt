@@ -1,0 +1,56 @@
+Table of Contents
+
+    1. Introduction
+    2. Motivation
+    3. How AyurVichar Works
+    4. Key Features
+    5. Getting Started
+    6. Contributing
+    7. License
+
+1. Introduction
+
+Welcome to AyurVichar, your personal Ayurvedic health companion. AyurVichar is a web-based platform that helps you understand your unique constitution, or "Prakruti," according to Ayurvedic principles. By taking you through a guided self-assessment, AyurVichar offers personalized insights and recommendations to promote your well-being.
+2. Motivation
+
+In a fast-paced world, the ancient wisdom of Ayurveda can bring balance and harmony to our lives. AyurVichar's mission is to make Ayurvedic principles accessible and relevant to modern lifestyles. We aim to:
+
+    Promote Ayurveda: Revive the ancient wisdom of Ayurveda and its holistic approach to health and wellness.
+    Individualize Health Care: Empower individuals to understand their Prakruti and make informed choices.
+    Cultural Connection: Celebrate and honor our rich cultural heritage through Ayurveda.
+
+3. How AyurVichar Works
+
+AyurVichar simplifies the complex process of determining your Prakruti. Here's how it works:
+
+    Prakruti Assessment: You'll answer a series of questions related to your constitution and health. This self-assessment is your path to understanding your unique Prakruti.
+
+    Personalized Insights: Based on your responses, AyurVichar's AI-powered chatbot will determine your Prakruti type, whether it's Vata, Pitta, Kapha, or a combination. It will provide insights into your strengths and areas to focus on.
+
+    Dietary & Lifestyle Recommendations: AyurVichar offers personalized recommendations on foods, activities, and daily routines that align with your Prakruti. This helps you make healthier choices tailored to your unique constitution.
+
+4. Key Features
+
+    Prakruti Self-Assessment: Determine your Prakruti type through a simple and intuitive questionnaire.
+    Personalized Insights: Receive a detailed analysis of your Prakruti with strengths and areas for improvement.
+    Dietary & Lifestyle Guidance: Access customized recommendations to enhance your well-being.
+    Promote Ayurveda: Connect with the wisdom of Ayurveda and bring balance into your life.
+    Celebrate Culture: Rediscover and honor your cultural roots through the practices of Ayurveda.
+
+5. Getting Started
+
+Getting started with AyurVichar is easy:
+
+    Sign up or log in to your account.
+    Complete the Prakruti self-assessment questionnaire.
+    Receive personalized insights and recommendations.
+    Start your Ayurvedic journey towards well-being.
+
+6. Contributing
+
+We welcome contributions to AyurVichar! If you're passionate about promoting Ayurveda and helping people discover their Prakruti, feel free to contribute to our open-source project. We believe that together, we can make Ayurveda accessible to all.
+7. License
+
+AyurVichar is released under the Apache License 2.0, allowing for flexibility in sharing, modifying, and using the code. This open-source license encourages collaboration and innovation.
+
+Let's embark on a journey of wellness through Ayurveda with AyurVichar. Embrace the wisdom of your Prakruti, celebrate your culture, and nurture your well-being.
