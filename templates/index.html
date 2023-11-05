@@ -4,62 +4,116 @@
 {% block title %}Home{% endblock title %}
 {% block head %}
 
-   <link rel="stylesheet" href="{% static 'css/style.css' %}">
-   <link rel="stylesheet" href="{% static 'css/prakruti.css' %}">
-   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AyurVichar</title>
+</head>
 {% endblock head %}
 
-
-    
+<body>
     {% block main %}
-
-
-        <section id="intro" class="content-section">
-
+    <main>
+        <div class="bg-stickers">
+            <img src="{% static 'img/yoga 2 1.png' %}" class="bg-1" alt="background-sticker">
+            <img src="{% static 'img/yoga 7 1.png' %}" class="bg-2" alt="background-sticker">
+            <img src="{% static 'img/yoga 8 1.png' %}" class="bg-3" alt="background-sticker">
+            <img src="{% static 'img/yoga 6 4.png' %}" class="bg-4" alt="background-sticker">
+        </div>
+        <section id="intro">
             <div class="intro-text">
-                <p class="name">Welcome to <span> AyurVichar </span></p>
-                <h2>Your Personal assistant for harnessing Ayurvedic wisdom !</h2>
-                
-                <p>"Your Dosha, Your Health"</p>
-                <a class="blog-link"  href="/login">Know Your Prakruti<i
-                        class='bx bxs-chevron-right'></i></a>
-
-
+                <p class="font-large">Key to Healthy Lifestyle and Well being</p>
+                <p class="font-ex-large intro-heading">AYURVICHAR</p>
+                <p class="intro-text font-small">We provide a medicine free solution to your problems</p>
+                <a href="" class="btn-border">Get Started</a>
+            </div>
+            <div class="intro-img">
+                <img src="{% static 'img/intro-img.png' %}" alt="">
+            </div>
+        </section>
+        <section id="about-chatbot">
+            <div>
+                <img src="{% static 'img/chat.png' %}" alt="">
+            </div>
+            <div>
+                <p class="font-mid-medium about-chatbot-heading">Holistic Support for All</p>
+                <p class="font-small">
+                    AyurVichar stands as a comprehensive platform, catering
+                    to the diverse needs of all users. By providing
+                    personalized insights into their unique Prakriti and
+                    tailored health regimens, we empower individuals to
+                    take charge of their well-being. Through accessible
+                    guidance on natural remedies and holistic practices,
+                    we aim to assist users in overcoming a range of health
+                    issues, both minor and major.
+                </p>
 
             </div>
+        </section>
+        <section id="aims">
+            <p class="font-large font-we-medium aim-heading"><span><img src="{% static 'img/Goal.png' %}"
+                        alt=""></span>Our Vision :</p>
+            <div class="aim-boxes">
+                <article>
+                    <div>
+                        <p class="font-we-medium font-medium">What actually AyurVichar does?</p>
+                        <span class="font-normal">AyurVichar aims to create a global community that understands
+                            Ayurveda,
+                            focusing on personalized
+                            health, natural remedies, and holistic practices. They want to encourage self-care and
+                            well-being,
+                            helping people achieve vibrant health and inner harmony. Their goal is to make Ayurveda
+                            accessible
+                            and beneficial in the modern world.
+                        </span>
+                        <span class="btn font-normal help-btn" name="students">Learn More</span>
+                    </div>
 
-            <!-- image for landing page -->
-            <div class="intro-img">
-                
+                </article>
+                <article>
+                    <div>
+                        <p class="font-we-medium font-medium">Empowering the new generation</p>
+                        <span class="font-normal">
+                            AyurVichar helps the new generation deal with stress and busy lives. They provide
+                            personalized health advice and holistic well-being guidance to encourage self-care. By using
+                            Ayurvedic principles, they aim to make young people more mindful and emotionally strong.
+
+                        </span>
+                        <span class="btn font-normal help-btn">Learn More</span>
+                    </div>
+
+                </article>
+                <article>
+                    <div>
+                        <span>
+                            <p class="font-we-medium font-medium">Shaping a healthier future</p>
+                            <p class="line">
+                            </p>
+                        </span>
+                        <span class="font-normal">
+                            AyurVichar believes that using Ayurvedic principles can make our future healthier. They
+                            promote personalized health routines and natural remedies to prevent illness rather than
+                            just treating it. They also focus on holistic well-being, teaching people that the mind,
+                            body, and spirit are all connected.
+                        </span>
+                        <span class="btn font-normal help-btn">Learn More</span>
+                    </div>
+
+                </article>
             </div>
 
 
 
         </section>
-        <div class="gradient">
 
-        </div>
-        
-        <div class="gradient">
-
-        </div>
-        <!-- <div class="home-wave">
-
-        </div> -->
-        
-
-
-        <div class="gradient">
-
-        </div>
-
-
-
-        
+    </main>
     {% endblock main %}
 
     {% block script %}
-    {% comment %} <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script> {% endcomment %}
+  
+    <script src="../static/js/script.js"></script>
     <script src="js/script.js"></script>
     {% endblock script %}
+</body>
+
+</html>

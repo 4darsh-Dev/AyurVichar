@@ -23,65 +23,24 @@
             </div>
         </div>
         {% endif %}
-        <div class="bot-img">
-            <img src="{% static 'img/chatbot.svg' %}" alt="Chatbot">
-        </div>
-        <!-- For displaying the user chats -->
-        <div class="main-chat">
-            <div class="chat-box">
-                <ul class="message-list">
-             
-                  
-                    {% while {{iVal}} < {{myLen}}:%}
-                    <li class="message received">
-                        <div class="message-text">
-                            <div class="message-sender">
-                                <b>Prakruti Chatbot</b>
-                            </div>
-                            <div id="mess-content" class="message-content">
-                                {{questions[iVal].get("questions")}}
-                            </div>
+        
 
-                        </div>
-                    </li>
-                    <li class="message sent">
-                        <div class="message-text">
-                            <div class="message-sender">
-                                <b>You</b>
-                            </div>
-                            <div class="message-content"></div>
-                        </div>
-                    </li>
-                            {% count += 1 %}
-                        {% endwhile %}
-             
-                                    
+        <form method="POST">
+            {% csrf_token %}
+            <ul>
+                {% for question in questions %}
+                <li>
+                    <label>{{ question.question }}</label><br>
+                    <input type="checkbox" name="{{ question.id }}" value="yes"> Yes
+                    <input type="checkbox" name="{{ question.id }}" value="no"> No
+                </li>
+                {% endfor %}
+
                 
-              
-                   
-                    
-                    
-                    
-                </ul>
-            </div>
-            <div class="chat-img-box">
-            </div>
-        </div>
-        <!-- For accepting responses from the user in an input box -->
-        <div class="user-box">
-            <div class="us-box-ins">
-                <div id="chatbox" class="mess-fm">
-                    <form class="message-form" id="chat-form" method="POST">
-                        {% csrf_token %}
-                        <input class="message-input" name="message" id="message" required type="text"
-                            placeholder="Enter your message...">
-                    </form>
-                </div>
-                <div id="mess-btn" class="mess-btn">
-                    <i class='bx bx-send'></i>
-                </div>
-            </div>
-        </div>
+            </ul>
+            <button type="submit">Submit</button>
+        </form>
+        
     </div>
 </section>
 {% endblock main %}
