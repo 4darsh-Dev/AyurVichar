@@ -1,11 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-</head>
-<body>
-    <h1>I am about page! </h1>
-</body>
-</html>
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %} About {% endblock title %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+{% endblock head %}
+
+{% block main %}
+<main class="about">
+    <section class="who-we-are">
+        <h1 class="font-ex-large">Who we are...</h1>
+        <span class="font-normal">AyuVichar is dedicated to revolutionizing the approach to health and well-being
+            by blending the timeless wisdom of Ayurveda with modern technology.
+            We strive to bridge the gap between ancient holistic practices and contemporary
+            lifestyles, offering users a personalized roadmap to optimal health. With a strong
+            emphasis on tailored solutions and natural remedies, our platform aims to empower
+            individuals to take proactive steps towards preventive care and foster a deeper
+            connection with their overall well-being.</span>
+        <span href="" class="btn-border">Know More</span>
+    </section>
+    <section class="why-we-exist">
+        <h1 class="font-ex-large">Why we Exist...</h1>
+        <span class="font-normal">AyuVichar exists to reinstate the significance of personalized well-being through
+            the lens of Ayurveda. We strive to offer a holistic approach that resonates with
+            individuals' unique Prakriti, catering to their diverse health needs. Our purpose is to
+            bridge the gap between ancient wisdom and contemporary health challenges,
+            empowering users to reclaim their vitality and inner balance.</span>
+        <span href="" class="btn-border">Start Working With Us</span>
+    </section>
+    <section class="philosophy">
+        <h1 class="font-ex-large">Our Philosophy</h1>
+        <div>
+            <div>Balance</div>
+            <div>Harmony</div>
+        </div>
+        <div>
+            <div>Holism</div>
+            <div>Prevention</div>
+            <div>Vitality</div>
+        </div>
+        <div class="bg-stickers-about">
+            <img src="{% static 'img/pot.png' %}" class="bg-1-about" alt="background-sticker">
+        </div>
+    </section>
+</main>
+
+{% endblock main %}
+
+{% block script %}
+<script src="{% static 'js/script.js' %}"></script>
+{% endblock script %}

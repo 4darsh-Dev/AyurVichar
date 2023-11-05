@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}Contact {% endblock title %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<link rel="stylesheet" href="{% static 'css/contact.css' %}">
+<link rel="stylesheet" href="{% static 'css/login.css' %}">
+<link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+{% endblock head %}
+
+{% block main %}
+
+<section id="contact" class="contact content-section">
+    <div class="contact-intro">
+        <img src="{% static 'img/intro-img2.png' %}" alt="">
+        <h1 class="font-ex-large">Let's Talk....</h1>
+        <div class="contact-form">
+            <div class="mc-div-contact">
+                <div class="sub-c">
+
+                    <div class="sub-c-1">
+                        <h1 class="head">Connect with us</h1>
+                        <div class="form">
+                            <form id="my-form" method="post" action="/login/">
+                                {% csrf_token %}
+
+                                <div class="form-c-1">
+                                    <label class="sub-head" for="username">
+                                        Name
+                                    </label>
+
+                                    <span> <i class='bx bxs-user input-img'></i>
+                                        <input class="form-f" id="username" name="username" required
+                                            placeholder="Type your username" type="text"></span>
+
+                                </div>
+
+                                <div class="form-c-1">
+                                    <label class="sub-head" for="email">
+                                        Email
+                                    </label><span>
+                                        <i class='bx bxs-envelope'></i>
+                                        <input class="form-f" id="email" name="email" placeholder="Type your Email"
+                                            type="email" required></span>
+
+                                </div>
+                                <div class="form-c-1">
+                                    <label class="sub-head" for="message">
+                                        Message
+                                    </label>
+                                    <span>
+                                        <i class='bx bxs-message-rounded-dots'></i>
+                                        <input class="form-f" id="message" name="message"
+                                            placeholder="Type your Message" required></span>
+
+                                </div>
+
+                            </form>
+
+                            <button id="login-btn" class="login-btn">Subscribe</button>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+{% endblock main %}
+
+{% block script %}
+
+<script src="{% static 'js/script.js' %}"> </script>
+
+{% endblock script %}
