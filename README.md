@@ -37,7 +37,7 @@ Replace the placeholders with your actual project details. You can include links
 
 ## Screenshots
 
-![App Screenshot](https://onionreads.com/wp-content/uploads/2023/11/AyurVichar-image.png)
+![App Screenshot](https://onionreads.com/wp-content/uploads/2023/11/AyurVichar-image-e1699172022423.png)
 
 
 ## Installation
