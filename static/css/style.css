@@ -53,7 +53,7 @@ a {
   color: black;
   border: 2px solid var(--color-secondary);
   border-radius: 5px;
-  padding: 5px;
+  padding: 10px;
   &:hover {
     background-color: var(--color-secondary);
     color: white;
