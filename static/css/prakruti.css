@@ -1,0 +1,193 @@
+
+.container{
+    width: 100%;
+    height: auto;
+
+
+}
+
+.error-message{
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    
+
+}
+.error-message p{
+    color: var(--deep-pink);
+    font-size: 16px;
+    font-family: var(--sans);
+    padding:12px;
+    margin: 6px;
+
+}
+body{
+    background-color: #fff;
+}
+.bot-img{
+    display: inline-block;
+    width: auto;
+    height: 32px;
+    background-color: #fff;
+    margin: 12px 8px;
+
+
+}
+.bot-img img{
+    max-height: 32px;
+    height: 100%;
+    width: auto;
+
+}
+.main-chat{
+    width: 100%;
+    height: 600px;
+    display: inline-flex;
+    flex-direction: row;
+    gap: 10rem;
+
+}
+
+.chat-box{
+   width: calc(60vw - 80px);
+   height: 600px;
+   padding:  0 40px;
+   /* background-color: red; */
+
+}
+.chat-img-box{
+    width: 40vw;
+    height: 600px;
+    padding: 0 40px;
+    background-image: url(/static/img/vidura-chatbot.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+
+}
+
+.bot-message{
+   
+    /* background-color: yellow; */
+    border-radius: 55px;
+    background-color: #ebe7e7;
+    color: #616060;
+    font-size: 16px;
+    display: flex;
+    /* justify-content: center; */
+    padding: 0 16px;
+    margin: 12px 0;
+
+    align-items: center;
+    
+
+}
+
+.bot-message p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.user-message{
+    /* background-color: #ff6347; */
+    /* color: #fff; */
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    font-size: 14px;
+    border-radius: 25px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* padding: 6px 15px; */
+    
+
+    
+}
+
+.user-message p{
+    color: #fff;
+    font-size: 16px;
+    /* float: right; */
+    background-color: var(--deep-pink);
+    margin: 6px 0;
+    padding: 12px 15px;
+    border-radius: 25px;
+
+
+
+}
+
+.message-list{
+    list-style-type: none;
+    
+}
+.user-box{
+    position: fixed;
+    width: calc(100% - 40px);
+    bottom: 0;
+    background-color: #ebe7e7;
+    height: 80px;
+    padding: 0 20px;
+
+
+}
+.us-box-ins{
+    width: auto;
+    /* height: 60px; */
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    margin: 16px 0;
+
+
+    
+}
+
+.mess-fm{
+    display: inline-block;
+
+}
+
+.mess-fm input{
+    height: 50px;
+    padding: 0 8px;
+    border: 2px solid var(--deep-pink);
+    border-radius: 34px;
+    /* width: 100%; */
+    width: 30vw;
+    font-size: 14px;
+
+}
+
+.mess-btn{
+    display: inline-block;
+    background-color: var(--deep-pink);
+    width: 50px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 12px;
+
+
+}
+
+.mess-btn i{
+    font-size: 36px;
+    color: #fff;
+}
+
+.mess-btn:hover{
+    cursor: pointer;
+    box-shadow: 0 0 25px var(--deep-pink);
+}
+
+
+
+
+footer{
+    display: none;
+
+}

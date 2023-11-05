@@ -1,74 +1,91 @@
-{% extends "base.html" %}
+ {% extends "base.html" %}
 
 {% load static %}
 {% block title %}Prakruti Chatbot {% endblock title %}
 {% block head %}
-<head>
    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-   <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+   <link rel="stylesheet" href="{% static 'css/prakruti.css' %}">
    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-</head>
-
 {% endblock head %}
-
-<body>
-    
-    {% block main %}
-
-    <main>
-        <section id="intro" class="content-section">
-
-            <form method="post">
-                {% csrf_token %}
-                {% for question in questions %}
-                <div class="question">{{ question.question }}</div>
-                <input type="radio" name="{{ question.id }}" value="1"> Yes
-                <input type="radio" name="{{ question.id }}" value="0"> No
-                <br>
-                {% endfor %}
-                <button type="submit">Submit</button>
-            </form>
-
-
+{% block main %}
+<section class="home" id="home">
+    <div class="container">
+        {% if user.is_authenticated %}
+        <div class="user-intro"><b>Welcome, {{ user.username }}</b> <a href="/logout">Logout</a></div>
+        {% else %}
+        <div class="user-intro"><b>You are not logged in. <a href="/login">Login</a> or <a href="/register">Register</a></b></div>
+        {% endif %}
+        {% if error_message %}
+        <div id="error-message" class="error-message">
+            <p>{{ error_message }}</p>
+            <div id="cross-btn" class="cross-btn">
+                <i class='bx bx-x'></i>
             </div>
+        </div>
+        {% endif %}
+        <div class="bot-img">
+            <img src="{% static 'img/chatbot.svg' %}" alt="Chatbot">
+        </div>
+        <!-- For displaying the user chats -->
+        <div class="main-chat">
+            <div class="chat-box">
+                <ul class="message-list">
+             
+                  
+                    {% while {{iVal}} < {{myLen}}:%}
+                    <li class="message received">
+                        <div class="message-text">
+                            <div class="message-sender">
+                                <b>Prakruti Chatbot</b>
+                            </div>
+                            <div id="mess-content" class="message-content">
+                                {{questions[iVal].get("questions")}}
+                            </div>
 
-            <!-- image for landing page -->
-            <div class="intro-img">
+                        </div>
+                    </li>
+                    <li class="message sent">
+                        <div class="message-text">
+                            <div class="message-sender">
+                                <b>You</b>
+                            </div>
+                            <div class="message-content"></div>
+                        </div>
+                    </li>
+                            {% count += 1 %}
+                        {% endwhile %}
+             
+                                    
                 
+              
+                   
+                    
+                    
+                    
+                </ul>
             </div>
-
-
-
-        </section>
-        <div class="gradient">
-
+            <div class="chat-img-box">
+            </div>
         </div>
-        
-        <div class="gradient">
-
+        <!-- For accepting responses from the user in an input box -->
+        <div class="user-box">
+            <div class="us-box-ins">
+                <div id="chatbox" class="mess-fm">
+                    <form class="message-form" id="chat-form" method="POST">
+                        {% csrf_token %}
+                        <input class="message-input" name="message" id="message" required type="text"
+                            placeholder="Enter your message...">
+                    </form>
+                </div>
+                <div id="mess-btn" class="mess-btn">
+                    <i class='bx bx-send'></i>
+                </div>
+            </div>
         </div>
-        <!-- <div class="home-wave">
-
-        </div> -->
-        
-
-
-    
-
-
-
-        
-    </main>
-    {% endblock main %}
-
-    {% block script %}
-
-    <script src="js/script.js"></script>
-    <script src="js/prakruti.js"></script>
-
-    {% endblock script %}
-
-</body>
-
-</html>
+    </div>
+</section>
+{% endblock main %}
+{% block script %}
+<script src="{% static 'js/script.js' %}"></script>
+<script src="{% static 'js/prakruti.js' %}"></script>
+{% endblock script %}

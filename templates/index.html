@@ -3,20 +3,18 @@
 {% load static %}
 {% block title %}Home{% endblock title %}
 {% block head %}
-<head>
-   <link rel="stylesheet" href="{% static 'css/style.css' %}">
-   <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
-   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-</head>
+   <link rel="stylesheet" href="{% static 'css/style.css' %}">
+   <link rel="stylesheet" href="{% static 'css/prakruti.css' %}">
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 {% endblock head %}
 
-<body>
+
     
     {% block main %}
 
-    <main>
+
         <section id="intro" class="content-section">
 
             <div class="intro-text">
@@ -59,14 +57,9 @@
 
 
         
-    </main>
     {% endblock main %}
 
     {% block script %}
     {% comment %} <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script> {% endcomment %}
     <script src="js/script.js"></script>
     {% endblock script %}
-
-</body>
-
-</html>
