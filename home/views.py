@@ -108,7 +108,7 @@ def logoutUser(request):
 
 def profile(request):
 
-    return render(request, "profile.html" )
+    return render(request, "profile.html", {"prakruti_type" : prakruti_type})
 
 
 
@@ -566,8 +566,9 @@ def prakriti_request(request):
             prakruti_result.kapha_score = kapha_score
             prakruti_result.save()
 
-            return redirect('profile')  # Redirect to a success page or profile page
-
+            # return redirect('profile')  # Redirect to a success page or profile page
+            return render(request, "pofile.html",{"prakruit_result " : prakruti_result } )
+        
     else:
         form = PrakrutiForm()
 
